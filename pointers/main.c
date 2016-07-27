@@ -3,7 +3,7 @@
 /*
  * @author jelathro
  * @date 2/19/13
- * 
+ * Contributor: Joshua Steier; I'll just be adjusting some of the code for readability and design
  * Provide various examples of pointers 
  * and how pointers work.
  */
@@ -15,14 +15,14 @@ int main(void){
     // Give value a literal value
     basic_value = 'A';
     // Assign pointer to address
-    // of literal value in value
+    // of literal value in value used through & symbol because pointer refers to adress in memory.
     basic_pointer = &basic_value;
 
     printf("pointer is at address %p\n", &basic_pointer);
     printf("value at address of pointer is %c\n\n", *basic_pointer);
 
     // More advanced use of pointers
-    // Array's are just fancy pointers
+    // Array's are just fancy pointers and strings are essentially arrays of characters
     char array[5] = {'a', 'A', 'b', 'z', 'M'};
     char *same_array = array;
     char **fancy_same_array = &same_array;
